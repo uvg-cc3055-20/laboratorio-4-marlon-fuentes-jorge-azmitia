@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MeteorSpawner : MonoBehaviour {
     public GameObject meteor;
-    float spawnTime = 4f;
+    float spawnTime = 2f;
     float elapsedTime = 0f;
     // Use this for initialization
     void Start () {
@@ -19,7 +19,7 @@ public class MeteorSpawner : MonoBehaviour {
         }
         else
         {
-            float random = Random.Range(-4f, 4f);
+            float random = Random.Range(-3f, 3f);
             Instantiate(meteor, new Vector3(random,5,0),Quaternion.identity);
             elapsedTime = 0;
         }
