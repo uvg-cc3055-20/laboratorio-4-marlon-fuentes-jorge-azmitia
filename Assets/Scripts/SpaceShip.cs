@@ -36,6 +36,9 @@ public class SpaceShip : MonoBehaviour {
 			  
 		  }
 	*/		
+	
+	
+		//----------------------------------------SoundManagerScript.PlaySound("death");
 		GameController.instance.gameOver=true;
 		
 	}
