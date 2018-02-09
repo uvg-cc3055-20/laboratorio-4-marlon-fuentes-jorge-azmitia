@@ -15,4 +15,22 @@ public class SpaceShip : MonoBehaviour {
         float movX = Input.acceleration.x;
         rb.transform.Translate(Vector2.right * speed * movX * Time.deltaTime);
 	}
+	
+	
+	public void OnTriggerEnter2D (Collision2D collision)
+	{
+				 Debug.Log(GameController.instance.time);
+
+		GameController.instance.gameOver=true;
+		
+	}
+	
+	public void OnCollisionEnter2D(Collision2D collision)
+    {      
+
+				 Debug.Log(GameController.instance.time);
+
+		GameController.instance.gameOver=true;
+		    }
+	
 }
