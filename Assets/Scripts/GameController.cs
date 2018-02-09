@@ -8,7 +8,8 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour {
     public static GameController instance;
 	public int score =0 ;
-	public float time;
+	public float time=0;
+	public float finaltime;
 	public Text timeLabel;
 	public bool gameOver = false;
 	// Use this for initialization
@@ -22,15 +23,9 @@ public class GameController : MonoBehaviour {
 		
 		if (gameOver == false){
 		time += Time.deltaTime;
-		timeLabel.text=time.ToString("n2");
+		timeLabel.text="Score: " + time.ToString("n2");
+		}else{	
+		SceneManager.LoadScene("Menu_Scene");
 		}
-		
-		if (gameOver == true){
-			
-			
-			SceneManager.LoadScene("Scene_0");
-
-		}
-		
 	}
 }
