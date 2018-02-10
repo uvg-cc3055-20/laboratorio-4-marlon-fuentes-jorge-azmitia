@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+/*
+ * Universidad del Valle de Guatemala
+ * Marlon Fuentes - Jorge Azmitia
+ * Funcion: Clase donde se encunetra el control del juego. 
+ */
 
 public class GameController : MonoBehaviour {
     public static GameController instance;

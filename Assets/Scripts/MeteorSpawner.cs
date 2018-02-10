@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Universidad del Valle de Guatemala
+ * Marlon Fuentes - Jorge Azmitia
+ * Funcion: Clase que permite a los meteoritos spawn
+ */
 public class MeteorSpawner : MonoBehaviour {
     public GameObject meteor;
     float spawnTime = 2f;

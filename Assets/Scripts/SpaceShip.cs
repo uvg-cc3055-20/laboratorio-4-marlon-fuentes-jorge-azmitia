@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Universidad del Valle de Guatemala
+ * Marlon Fuentes - Jorge Azmitia
+ * Funcion: Clase que da funcionabilidad a la nave
+ */
 public class SpaceShip : MonoBehaviour {
     Rigidbody2D rb;
     float speed = 10f;
