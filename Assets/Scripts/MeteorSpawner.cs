@@ -7,6 +7,8 @@ using UnityEngine;
  * Funcion: Clase que permite a los meteoritos spawn
  */
 public class MeteorSpawner : MonoBehaviour {
+	
+	//se declara el gameobject meteoro, el tiempo en el que este aparece y el tiempo que este lleva en pantalla
     public GameObject meteor;
     float spawnTime = 2f;
     float elapsedTime = 0f;
@@ -17,10 +19,13 @@ public class MeteorSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
+		//mientras que el tiempo que ha pasado sea menor que el tiempo de aparicion, se sigue sumando tiempo
         if (elapsedTime < spawnTime)
         {
             elapsedTime += Time.deltaTime;
         }
+		//cuando el tiempo que ha pasado, sobrepasa al tiempo de aparicion, se genera un nuevo meteoro que aparece entre la posicion -3 y 3 y se reinicia el tiempo
         else
         {
             float random = Random.Range(-3f, 3f);

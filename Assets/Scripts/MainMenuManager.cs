@@ -9,6 +9,8 @@ using UnityEngine.SceneManagement;
  */
 public class MainMenuManager : MonoBehaviour {
 
+
+//se declara el metodo que nos carga la escena en la que se juega, accion que se realiza al apachar el boton
 	public void PlayGame()
     {
         SceneManager.LoadScene("Scene_1");
